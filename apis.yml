@@ -1,7 +1,26 @@
 aid: creative-market
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/creative-market.png
 name: Creative Market
-description: Creative Market is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Creative Market is an online marketplace for community-generated design
+  assets, where independent creators sell fonts, graphics, illustrations, templates,
+  photos, icons, mockups, add-ons, and 3D assets to designers and businesses. Founded
+  in 2012 and backed by 500 Global, the platform operates a storefront and seller
+  dashboard model with per-product commercial licensing, an affiliate and ambassador
+  program, a design blog, and enterprise sales. As of this enrichment pass Creative
+  Market publishes no public developer API, API documentation, SDKs, or developer
+  portal; this profile captures the company's identity, published policy and support
+  surfaces, and a live domain-security probe.
 url: https://raw.githubusercontent.com/api-evangelist/creative-market/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Marketplace
+- Design
+- Creative Assets
+- Fonts
+- Graphics
+- Templates
+- E-Commerce
+- Digital Goods
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,22 @@ maintainers:
 common:
 - type: Website
   url: https://creativemarket.com
+- type: TermsOfService
+  url: https://creativemarket.com/terms
+- type: PrivacyPolicy
+  url: https://creativemarket.com/privacy
+- type: Support
+  url: https://support.creativemarket.com/hc/en-us
+- type: Blog
+  url: https://creativemarket.com/blog
+- type: SignUp
+  url: https://creativemarket.com/sign-up
+- type: Login
+  url: https://creativemarket.com/sign-in
+- type: DomainSecurity
+  url: security/creative-market-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
